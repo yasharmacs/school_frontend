@@ -10,6 +10,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { StudentFormComponent } from './components/student-form/student-form.component';
+import { FormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,7 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    StudentFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,10 @@ import { RouterModule } from '@angular/router';
     BrowserAnimationsModule,
     MatButtonModule,
     MatSidenavModule,
-    RouterModule
+    RouterModule,
+    MatToolbarModule,
+    FormsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

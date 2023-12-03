@@ -1,32 +1,22 @@
 <head>
     <meta charset="UTF-8">
      <title> Crawling Blooming Cubs </title> 
-   </head>
+</head>
 <body>
   <nav>
     <div class="nav-content">
       <div class="logo">
+        <button id="sideNavToggle" class="sideNavButton" >☰</button>
         <a href="#">CBC</a>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Students</a></li>
+        <button (click)="toggleForm()">Add Students</button>
+        <!-- <li><a routerLink="/student-form" >Add Students</a></li> -->
+        <li><a >Students</a></li>
+        <li><a href="#">Add Teachers</a></li>
         <li><a href="#">Teachers</a></li>
-        <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </nav>
-  <section class="home"></section>
-  <script>
-//   let nav = document.querySelector("nav");
-//     window.onscroll = function() {
-//       if(document.documentElement.scrollTop > 20){
-//         nav.classList.add("sticky");
-//       }else {
-//         nav.classList.remove("sticky");
-//       }
-//     }
-//   </script>
-
 </body>

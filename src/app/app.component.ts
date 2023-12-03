@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'school-management';
+  showForm: boolean = false;
+  toggleForm() {
+    this.showForm = !this.showForm; // Toggle the form visibility.
+  }
 }

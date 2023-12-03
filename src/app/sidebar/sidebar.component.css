@@ -1,0 +1,38 @@
+/* component-name.component.css */
+
+/* Style the entire sidenav container */
+mat-sidenav-container {
+    display: flex;
+    height: 100vh; /* Set the height of the container to 100% of the viewport height */
+  }
+  
+  /* Style the sidenav on the left */
+  mat-sidenav {
+    width: 250px; /* Adjust the width as needed */
+    background-color: #4070f4; /* Set the background color to blue */
+    color: white; /* Set the text color to white */
+  }
+  
+  /* Style the content within mat-sidenav-content (main content) */
+  mat-sidenav-content {
+    flex: 1; /* Allow the main content to take remaining space */
+    padding: 20px; /* Add padding to the main content */
+  }
+  
+  /* Style the ul list items within the sidenav */
+  mat-sidenav ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove default list padding */
+  }
+  
+  /* Style the list items */
+  mat-sidenav li {
+    padding: 10px 20px; /* Add padding to the list items */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Style the toggle button */
+  button.mat-button {
+    color: white; /* Set text color to white */
+  }
+  

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title="02 Solutions";
+  showForm: boolean = false;
+
+  toggleForm() {
+    this.showForm = !this.showForm; // Toggle the form visibility.
+  }
 }
