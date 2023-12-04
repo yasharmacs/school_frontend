@@ -14,6 +14,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { StudentFormComponent } from './components/student-form/student-form.component';
 import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     RouterModule,
     MatToolbarModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatIconModule,
+    MatListModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
