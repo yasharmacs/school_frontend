@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,23 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title="02 Solutions";
-  showForm: boolean = false;
+  // showForm: boolean = false;
 
-  toggleForm() {
-    this.showForm = !this.showForm; // Toggle the form visibility.
+  // toggleForm() {
+  //   this.showForm = !this.showForm; // Toggle the form visibility.
+  // }
+  @Output() dataEvent = new EventEmitter<Boolean>();
+  toggleBar: boolean = true;
+
+  // private _toggleSideBar = new Subject<boolean>();
+
+  // get refreshNeeded() {
+  //   return this._toggleSideBar;
+  // }
+
+  toggleSidebar() {
+    // this._toggleSideBar.next(!this.toggleBar);
+    this.dataEvent.emit(this.toggleBar);
   }
+  
 }

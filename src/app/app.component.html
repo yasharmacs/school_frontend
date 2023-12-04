@@ -1,4 +1,26 @@
-<app-header></app-header>
-<!-- <app-sidebar></app-sidebar>   -->
-<!-- <router-outlet></router-outlet> -->
+<!-- <app-header></app-header>
+<app-sidebar></app-sidebar>  
 <app-student-form></app-student-form>
+<app-footer></app-footer> -->
+
+<div>
+<app-header (dataEvent)="receiveDataFromChild($event)"></app-header>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav opened="true" mode="side">
+        <mat-nav-list>
+            <a mat-list-item routerLink="/student-form">Add Students</a>
+            <a mat-list-item href="">Add Teachers</a>
+            <a mat-list-item href="">Teachers</a>
+            <a mat-list-item href="">Contact</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 80vh;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<app-footer></app-footer>
+</div> 
+
+

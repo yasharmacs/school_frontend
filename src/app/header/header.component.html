@@ -1,4 +1,4 @@
-<head>
+<!-- <head>
     <meta charset="UTF-8">
      <title> Crawling Blooming Cubs </title> 
 </head>
@@ -11,7 +11,7 @@
       </div>
       <ul class="nav-links">
         <button (click)="toggleForm()">Add Students</button>
-        <!-- <li><a routerLink="/student-form" >Add Students</a></li> -->
+        <li><a routerLink="/student-form" >Add Students</a></li>
         <li><a >Students</a></li>
         <li><a href="#">Add Teachers</a></li>
         <li><a href="#">Teachers</a></li>
@@ -19,4 +19,13 @@
       </ul>
     </div>
   </nav>
-</body>
+</body> -->
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+      <button mat-icon-button (click)="toggleSidebar();">
+          <mat-icon>menu</mat-icon>
+      </button>
+      <h1>header</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
